@@ -6,8 +6,8 @@
 # Host tools build
 #
 
-host-util-bin=ectool lbplay stm32mon ec_sb_firmware_update lbcc
-build-util-bin=ec_uartd iteflash
+host-util-bin=
+build-util-bin=
 
 comm-objs=$(util-lock-objs:%=lock/%) comm-host.o comm-dev.o
 ifneq ($(HOSTCC),mipsel-cros-linux-gnu-gcc)
